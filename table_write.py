@@ -1,12 +1,6 @@
 # _*_ coding:utf-8 _*_
-# Project: 
 # FileName: table_write.py
-# UserName: 高俊佶
-# ComputerUser：19305
-# Day: 2022/11/10
-# Time: 9:49
 # IDE: PyCharm
-# 2022年，所有bug都将会被丢到海里喂鲨鱼！我说的！不容反驳！
 
 # pip install xlwings
 import json

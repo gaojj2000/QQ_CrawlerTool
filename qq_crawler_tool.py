@@ -1,12 +1,6 @@
 # _*_ coding:utf-8 _*_
-# Project: 
 # FileName: qq_crawler_tool.py
-# UserName: 高俊佶
-# ComputerUser：19305
-# Day: 2022/11/7
-# Time: 20:22
 # IDE: PyCharm
-# 2022年，所有bug都将会被丢到海里喂鲨鱼！我说的！不容反驳！
 
 import os
 import re

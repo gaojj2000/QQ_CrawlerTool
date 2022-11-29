@@ -1,12 +1,6 @@
 # _*_ coding:utf-8 _*_
-# Project: 
 # FileName: data_html.py
-# UserName: 高俊佶
-# ComputerUser：19305
-# Day: 2022/11/10
-# Time: 11:10
 # IDE: PyCharm
-# 2022年，所有bug都将会被丢到海里喂鲨鱼！我说的！不容反驳！
 
 # pip install fastapi[all]
 # pip install uvicorn[standard]
