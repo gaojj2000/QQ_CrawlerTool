@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QQ群信息展示</title>
+		<style>
+			table {
+				margin: 0 auto;
+				border-collapse: collapse;
+			}
+
+			td {
+				text-align: center;
+				border: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<center style="font-size: 72px;">
+			<p>QQ群信息展示<br>点击标题自动排序<br>群总数：<span style="color: red;font-weight: bolder;">{{total}}</span>
+			<br>您的创号时间：<br><span style="color: red;font-weight: bolder;">{{begin}}</span><br>您已创号 <span style="color: red;font-weight: bolder;">{{day}}</span> 天</p>
+		</center>
+		<table>
+			<tr>
+				<td><a onclick="number()">群号</a></td>
+				<td><a onclick="nick()">群名</a></td>
+				<td><a onclick="now()">当前人数</a></td>
+				<td><a onclick="max()">最多人数</a></td>
+				<td><a onclick="creater()">创建者QQ</a></td>
+				<td><a onclick="time()">创建时间</a></td>
+				<td><a onclick="my()">我的级别</a></td>
+				<td><a onclick="enter()">入群时间</a></td>
+			</tr>
+			{% for gro in groups %}
+			<tr>
+				{% for g in gro %}
+				<td>
+					{{g}}
+				</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</table>
+		<script>
+			function number() {
+				window.location.href = window.location.href + "0";
+			}
+
+			function nick() {
+				window.location.href = window.location.href + "1";
+			}
+
+			function now() {
+				window.location.href = window.location.href + "2";
+			}
+
+			function max() {
+				window.location.href = window.location.href + "3";
+			}
+
+			function creater() {
+				window.location.href = window.location.href + "4";
+			}
+
+			function time() {
+				window.location.href = window.location.href + "5";
+			}
+
+			function my() {
+				window.location.href = window.location.href + "6";
+			}
+
+			function enter() {
+				window.location.href = window.location.href + "7";
+			}
+		</script>
+	</body>
+</html>

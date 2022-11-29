@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>QQ好友和QQ群信息展现</title>
+		<style>
+			.area {
+				font-size: 48px;
+				line-height: 40px;
+			}
+
+			.choose {
+				width: 40px;
+				height: 40px;
+			}
+
+			#qqNum {
+				width: 400px;
+				height: 60px;
+				font-size: 48px;
+			}
+		</style>
+	</head>
+	<body>
+		<center style="font-size: 72px;">
+			<p>获取已收集信息的QQ<br>好友或QQ群信息展示</p>
+		</center>
+		<center>
+			<div class="area">
+				<input type="radio" class="choose" name="choose" value="friends" checked="checked" />QQ好友
+				<input type="radio" class="choose" name="choose" value="groups" />QQ群
+				<p>
+					<input type="text" id="qqNum" placeholder="QQ号码" />
+				</p>
+				<p>
+					<a style="font-size: 56px;" onclick="check()">提交</a>
+				</p>
+			</div>
+		</center>
+		<script>
+			function check() {
+				var c = document.getElementsByName('choose');
+				var q = document.getElementById('qqNum');
+				for (var i = 0; i < c.length; i++) {
+					if (c[i].checked) {
+						window.location.href = window.location.href + c[i].value + "/" + q.value + "/6";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
